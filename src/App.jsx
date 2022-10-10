@@ -1,46 +1,21 @@
-import Directory from "./components/directory/directory.component";
+import { Routes, Route } from "react-router-dom";
+import Home from "./routes/home/home.component";
+import NavBar from "./routes/navigation/navigation.component";
+import SignIn from "./routes/sign-in/sign-in.component";
+
+const Shop = () => {
+  return <h2>This is Shop</h2>;
+};
 
 const App = () => {
-  const mainCategories = [
-    {
-      id: 1,
-      title: "Apple",
-      imageUrl: "https://i.ibb.co/Gk8hgzt/apple.png",
-    },
-    {
-      id: 2,
-      title: "Samsung",
-      imageUrl: "https://i.ibb.co/p32MGtw/samsung.webp",
-    },
-    {
-      id: 3,
-      title: "OnePlus",
-      imageUrl: "https://i.ibb.co/VpSXFgF/oneplus.webp",
-    },
-    {
-      id: 4,
-      title: "Sony",
-      imageUrl: "https://i.ibb.co/RvBdgMc/sony.webp",
-    },
-    {
-      id: 5,
-      title: "Huawei",
-      imageUrl: "https://i.ibb.co/61x4R9Q/huawei.jpg",
-    },
-    {
-      id: 6,
-      title: "Nokia",
-      imageUrl: "https://i.ibb.co/dfPNdJb/nokia.jpg",
-    },
-  ];
   return (
-    <Directory mainCategories={mainCategories} />
-    // <div className="categories-container">
-    //   {/* before shifting the code it was {id, title, imageUrl} instead of (category) */}
-    //   {mainCategories.map((categoryArray) => (
-    //     <CategoryItem key={categoryArray.id} categoryProp={categoryArray} />
-    //   ))}
-    // </div>
+    <Routes>
+      <Route path="/" element={<NavBar />}>
+        <Route index element={<Home />} />
+        <Route path="shop" element={<Shop />} />
+        <Route path="sign-in" element={<SignIn />} />
+      </Route>
+    </Routes>
   );
 };
 
