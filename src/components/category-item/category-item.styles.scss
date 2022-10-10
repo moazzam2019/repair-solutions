@@ -55,14 +55,19 @@
 
     h2 {
       font-weight: bold;
+      padding-top: 10px;
       margin: 0 6px 0;
-      font-size: 22px;
+      font-size: 30px;
       color: #4a4a4a;
+
+      &:hover {
+        color: rgb(57, 99, 198);
+      }
     }
 
     p {
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 20px;
     }
   }
 }
