@@ -29,10 +29,10 @@ const Footer = () => {
               <h2>Contact us</h2>
               <ul className="list-one">
                 <li>
-                  <span>+019 (111) 25184203</span>
+                  <span>+45-71729778</span>
                 </li>
                 <li>
-                  <span>company@domain.com</span>{" "}
+                  <span>info@repairsolutions.dk</span>{" "}
                 </li>
                 <li>
                   <i class="sp-map-marker"></i>
@@ -82,7 +82,10 @@ const Footer = () => {
                     backgroundColor: "#333333",
                   }}
                 >
-                  <SendIcon color="primary" />{" "}
+                  <SendIcon
+                    color="primary"
+                    sx={{ "&:hover": { color: "white", cursor: "pointer" } }}
+                  />{" "}
                 </button>
               </form>
               <p>
