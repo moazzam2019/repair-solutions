@@ -1,56 +1,56 @@
 [
   {
     "id": 1,
-    "name": "Brown Brim",
-    "imageUrl": "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+    "name": "iPhone 14 Pro Max",
+    "imageUrl": "https://softliee.com/wp-content/uploads/2022/05/Apple-iPhone-14-Pro.jpg",
     "price": 2500
   },
   {
     "id": 2,
-    "name": "Blue Beanie",
-    "imageUrl": "https://i.ibb.co/ypkgK0X/blue-beanie.png",
-    "price": 18
+    "name": "iPhone 14 Pro",
+    "imageUrl": "https://www.pakmobizone.pk/wp-content/uploads/2022/10/Apple-iPhone-14-Pro-Deep-Purple-1.jpg",
+    "price": 2300
   },
   {
     "id": 3,
-    "name": "Brown Cowboy",
-    "imageUrl": "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
-    "price": 35
+    "name": "iPhone 14 Plus",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-plus-3.jpg",
+    "price": 2100
   },
   {
     "id": 4,
-    "name": "Grey Brim",
-    "imageUrl": "https://i.ibb.co/RjBLWxB/grey-brim.png",
-    "price": 25
+    "name": "iPhone 14",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-3.jpg",
+    "price": 1900
   },
   {
     "id": 5,
-    "name": "Green Beanie",
-    "imageUrl": "https://i.ibb.co/YTjW3vF/green-beanie.png",
-    "price": 18
+    "name": "iPhone 13 Pro Max",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-max-01.jpg",
+    "price": 1800
   },
   {
     "id": 6,
-    "name": "Palm Tree Cap",
-    "imageUrl": "https://i.ibb.co/rKBDvJX/palm-tree-cap.png",
-    "price": 14
+    "name": "iPhone 13 Pro",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-pro-01.jpg",
+    "price": 1600
   },
   {
     "id": 7,
-    "name": "Red Beanie",
-    "imageUrl": "https://i.ibb.co/bLB646Z/red-beanie.png",
-    "price": 18
+    "name": "iPhone 13",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-01.jpg",
+    "price": 1400
   },
   {
     "id": 8,
-    "name": "Wolf Cap",
-    "imageUrl": "https://i.ibb.co/1f2nWMM/wolf-cap.png",
-    "price": 14
+    "name": "iPhone 12 Pro Max",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-max-1.jpg",
+    "price": 1300
   },
   {
     "id": 9,
-    "name": "Blue Snapback",
-    "imageUrl": "https://i.ibb.co/X2VJP2W/blue-snapback.png",
-    "price": 16
+    "name": "iPhone 12 Pro",
+    "imageUrl": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-pro-r1.jpg",
+    "price": 1100
   }
 ]
