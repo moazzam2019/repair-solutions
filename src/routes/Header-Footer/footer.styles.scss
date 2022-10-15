@@ -1,13 +1,44 @@
 .footer-container {
-  margin-top: 40px;
-  background-color: beige;
+  margin-top: 80px;
   height: 300px;
+  background-color: aliceblue;
 }
 
 .copyright {
   background-color: #333333;
   color: white;
-  a {
-    color: orange;
+  padding-bottom: 2px;
+  & a:hover {
+    background-color: #4e4a4a;
+    color: white;
+  }
+  & .site-name {
+    color: white;
+    text-decoration: underline;
+  }
+  & p {
+    margin-top: 7px;
+  }
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  padding: 5px 0 15px 8px;
+  &.list-one {
+    padding-right: 20px;
+  }
+  & li {
+    list-style: none;
+    padding-bottom: 4px;
+    & a {
+      font-weight: 600;
+      color: #333333;
+      &:hover {
+        color: rgb(94, 94, 94);
+      }
+    }
   }
 }
