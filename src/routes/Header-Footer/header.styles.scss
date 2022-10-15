@@ -1,0 +1,37 @@
+.header-container {
+  background-color: #333333;
+  height: 150px;
+  margin-bottom: 25px;
+}
+.grid-container {
+  height: 100%;
+  width: 100%;
+}
+
+.top-header {
+  height: 30%;
+  border-bottom: 1px solid #666;
+}
+
+.header-top-main {
+  height: 100%;
+  border-right: 1px solid #666;
+}
+
+.header-top-item {
+  border-left: 1px solid #666;
+  padding-top: 10px;
+  padding-left: 10px;
+
+  color: white;
+}
+
+.bottom-header {
+  height: 70%;
+  padding-top: 20px;
+}
+
+.logo {
+  height: 60px;
+  background-color: beige;
+}
