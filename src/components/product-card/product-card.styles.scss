@@ -7,6 +7,9 @@
   position: relative;
   border: 1px solid black;
   padding: 20px;
+  @media (max-width: 600px) {
+    padding-bottom: 60px;
+  }
 
   img {
     width: 100%;
@@ -21,6 +24,9 @@
     position: absolute;
     top: 255px;
     display: none;
+    @media (max-width: 600px) {
+      top: 220px;
+    }
   }
 
   &:hover {
