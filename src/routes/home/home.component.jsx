@@ -1,7 +1,11 @@
 import Directory from "../../components/directory/directory.component";
 import { Outlet } from "react-router-dom";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Repair Solutions";
+  });
   const mainCategories = [
     {
       id: 1,

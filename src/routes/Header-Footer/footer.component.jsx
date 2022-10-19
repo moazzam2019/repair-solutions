@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="footer-container">
         <Container maxWidth="lg">
           <Grid container spacing={3}>
-            <Grid item xs={6} lg={3}>
+            <Grid item xs={6} lg={3} md={4}>
               <img src={RSlogo} style={{ width: "70%" }} />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
@@ -25,7 +25,7 @@ const Footer = () => {
                 praesentium magnam in?
               </p>
             </Grid>
-            <Grid item xs={6} lg={3}>
+            <Grid item xs={6} lg={3} md={4}>
               <h2>Contact us</h2>
               <ul className="list-one">
                 <li>
@@ -61,7 +61,7 @@ const Footer = () => {
                 </li>
               </ul>
             </Grid>
-            <Grid item xs={12} lg={3}>
+            <Grid item xs={12} lg={3} md={4}>
               <h2>Subscribe to news</h2>
               <form class="f-subscribe-form" action="#">
                 <span>

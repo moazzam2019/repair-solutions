@@ -5,8 +5,12 @@ import { CartContext } from "../../context/cart.context";
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
 
 import "./checkout.styles.scss";
+import { useEffect } from "react";
 
 const Checkout = () => {
+  useEffect(() => {
+    document.title = "Checkout";
+  });
   const { cartItems, cartTotal } = useContext(CartContext);
 
   return (
