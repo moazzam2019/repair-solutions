@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S22 Ultra 5G",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-ultra-5g-2.jpg",
+      "price": 750
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S22+ 5G",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-plus-5g-2.jpg",
+      "price": 550
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy S22 5G",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-5g-2.jpg",
+      "price": 379
+    },
+    {
+      "id": 4,
+      "name": "Samsung Galaxy A73 5G",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a73-5g-1.jpg",
+      "price": 428
+    },
+    {
+      "id": 5,
+      "name": "Samsung Galaxy A53 5G",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a53-5g-1.jpg",
+      "price": 330
+    },
+    {
+      "id": 6,
+      "name": "Samsung Galaxy A33 5G",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a33-5g-1.jpg",
+      "price": 260
+    },
+    {
+      "id": 7,
+      "name": "Samsung Galaxy A23",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a23-1.jpg",
+      "price": 180
+    },
+    {
+      "id": 8,
+      "name": "Samsung Galaxy A13",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a13-1.jpg",
+      "price": 150
+    },
+    {
+      "id": 9,
+      "name": "Samsung Galaxy A03",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a03-1.jpg",
+      "price": 110
+    }
+  ]

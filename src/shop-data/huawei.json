@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Huawei Mate 50 RS Porsche Design",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-mate-50-rs-porsche-design-1.jpg",
+      "price": 1900
+    },
+    {
+      "id": 2,
+      "name": "Huawei Mate 50 Pro",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-mate-50-pro-1.jpg",
+      "price": 1300
+    },
+    {
+      "id": 3,
+      "name": "Huawei Mate 50E",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-mate-50e-1.jpg",
+      "price": 600
+    },
+    {
+      "id": 4,
+      "name": "Huawei Mate 50",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-mate-50-1.jpg",
+      "price": 700
+    },
+    {
+      "id": 5,
+      "name": "Huawei nova 10 Pro",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-nova-10-pro-1.jpg",
+      "price": 700
+    },
+    {
+      "id": 6,
+      "name": "Huawei nova 10",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-nova-10-1.jpg",
+      "price": 500
+    },
+    {
+      "id": 7,
+      "name": "Huawei nova 10 SE",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-nova10-se-1.jpg",
+      "price": 400
+    },
+    {
+      "id": 8,
+      "name": "Huawei nova 10z",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/huawei/huavei-nova-10z-1.jpg",
+      "price": 250
+    },
+    {
+      "id": 9,
+      "name": "Huawei nova Y90",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-nova-y90-1.jpg",
+      "price": 180
+    }
+  ]

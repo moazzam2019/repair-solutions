@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Nokia X30",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-x30-5g-1.jpg",
+      "price": 500
+    },
+    {
+      "id": 2,
+      "name": "Nokia G60",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g60-5g-1.jpg",
+      "price": 400
+    },
+    {
+      "id": 3,
+      "name": "Nokia C31",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-c31-1.jpg",
+      "price": 150
+    },
+    {
+      "id": 4,
+      "name": "Nokia G400",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g400-5g-1.jpg",
+      "price": 250
+    },
+    {
+      "id": 5,
+      "name": "Nokia G11 Plus",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g11-plus-1.jpg",
+      "price": 150
+    },
+    {
+      "id": 6,
+      "name": "Nokia C200",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-c200-1.jpg",
+      "price": 70
+    },
+    {
+      "id": 7,
+      "name": "Nokia C21 Plus",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-c21-plus-gray.jpg",
+      "price": 120
+    },
+    {
+      "id": 8,
+      "name": "Nokia C21",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-c21-gray.jpg",
+      "price": 100
+    },
+    {
+      "id": 9,
+      "name": "Nokia G11",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g11-1.jpg",
+      "price": 250
+    }
+  ]

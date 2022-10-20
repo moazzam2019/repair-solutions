@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Sony Xperia 5 IV",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-5-iv-ecru-white.jpg",
+      "price": 800
+    },
+    {
+      "id": 2,
+      "name": "Sony Xperia 1 IV",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-1-iv-1.jpg",
+      "price": 820
+    },
+    {
+      "id": 3,
+      "name": "Sony Xperia 10 IV",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-10-iv-1.jpg",
+      "price": 350
+    },
+    {
+      "id": 4,
+      "name": "Sony Xperia Pro-I",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-pro-i-1.jpg",
+      "price": 950
+    },
+    {
+      "id": 5,
+      "name": "Sony Xperia 10 III Lite",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-10-iii-lite-00.jpg",
+      "price": 350
+    },
+    {
+      "id": 6,
+      "name": "Sony Xperia Pro",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-pro-5g-0.jpg",
+      "price": 300
+    },
+    {
+      "id": 7,
+      "name": "Sony Xperia 5 III",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-5-iii-02.jpg",
+      "price": 600
+    },
+    {
+      "id": 8,
+      "name": "Sony Xperia 1 III",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-1-iii-02.jpg",
+      "price": 600
+    },
+    {
+      "id": 9,
+      "name": "Sony Xperia L4",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-l4-1.jpg",
+      "price": 200
+    }
+  ]

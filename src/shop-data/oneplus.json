@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "OnePlus 10T",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-10t-5g-1.jpg",
+      "price": 600
+    },
+    {
+      "id": 2,
+      "name": "OnePlus Ace Pro",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-10t-5g-1.jpg",
+      "price": 500
+    },
+    {
+      "id": 3,
+      "name": "OnePlus 10R 150W",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-10r-1.jpg",
+      "price": 370
+    },
+    {
+      "id": 4,
+      "name": "OnePlus 10 Pro",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-10-pro-1.jpg",
+      "price": 570
+    },
+    {
+      "id": 5,
+      "name": "OnePlus 10R",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-10r-1.jpg",
+      "price": 350
+    },
+    {
+      "id": 6,
+      "name": "OnePlus 9RT 5G",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-rt-3.jpg",
+      "price": 380
+    },
+    {
+      "id": 7,
+      "name": "OnePlus 9 Pro",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-pro-1.jpg",
+      "price": 500
+    },
+    {
+      "id": 8,
+      "name": "OnePlus 9",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-1.jpg",
+      "price": 350
+    },
+    {
+      "id": 9,
+      "name": "OnePlus 9R",
+      "imageUrl": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9r-2.jpg",
+      "price": 300
+    }
+  ]
