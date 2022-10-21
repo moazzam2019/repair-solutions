@@ -5,9 +5,7 @@ import "./shop.styles.scss";
 import { useEffect } from "react";
 
 const Shop = () => {
-  useEffect(() => {
-    document.title = "Shop";
-  });
+  document.title = "Shop";
   const { products } = useContext(ProductsContext);
   return (
     <div className="products-container">

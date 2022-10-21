@@ -3,9 +3,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 
 const Home = () => {
-  useEffect(() => {
-    document.title = "Repair Solutions";
-  });
+  document.title = "Repair Solutions";
   const mainCategories = [
     {
       id: 1,

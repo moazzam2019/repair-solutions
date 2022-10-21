@@ -2,12 +2,9 @@ import SignUp from "./sign-up.component";
 import { Grid } from "@mui/material";
 
 import SignInBox from "./sign-in-box.component";
-import { useEffect } from "react";
 
 const SignIn = () => {
-  useEffect(() => {
-    document.title = "Sign in/Sign up";
-  }, []);
+  document.title = "Sign in/Sign up";
   return (
     <div>
       <Grid container>
