@@ -1,2 +1,0 @@
-username: repair-solutions
-database password: hWEbZV1MGKlQLQZC
