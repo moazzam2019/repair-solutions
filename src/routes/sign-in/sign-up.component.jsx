@@ -3,15 +3,13 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import axios from "axios";
 
 function Copyright(props) {
   return (
@@ -33,14 +31,26 @@ function Copyright(props) {
 
 const theme = createTheme();
 
+const API = "http://localhost:4000/api/users/signup";
+
 const SignUp = () => {
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
+    const body = {
+      name: data.get("name"),
       email: data.get("email"),
       password: data.get("password"),
-    });
+      passwordConfirm: data.get("passwordConfirm"),
+    };
+    console.log(body);
+
+    try {
+      await axios.post(API, body);
+      alert("Account created successfully");
+    } catch (err) {
+      alert(err.response.data.message);
+    }
   };
 
   return (
@@ -66,25 +76,14 @@ const SignUp = () => {
             sx={{ mt: 3 }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  autoComplete="given-name"
-                  name="firstName"
-                  required
-                  fullWidth
-                  id="firstName"
-                  label="First Name"
-                  autoFocus
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <TextField
                   required
                   fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  autoComplete="family-name"
+                  id="name"
+                  label="Name"
+                  name="name"
+                  autoComplete="full-name"
                 />
               </Grid>
               <Grid item xs={12}>
@@ -94,6 +93,7 @@ const SignUp = () => {
                   id="email"
                   label="Email Address"
                   name="email"
+                  type="email"
                   autoComplete="email"
                 />
               </Grid>
@@ -112,7 +112,7 @@ const SignUp = () => {
                 <TextField
                   required
                   fullWidth
-                  name="password"
+                  name="passwordConfirm"
                   label="Retype Password"
                   type="password"
                   id="password"

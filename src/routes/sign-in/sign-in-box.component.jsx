@@ -11,6 +11,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import axios from "axios";
 
 function Copyright(props) {
   return (
@@ -32,14 +33,24 @@ function Copyright(props) {
 
 const theme = createTheme();
 
+const API = "http://localhost:4000/api/users/login";
+
 const SignInBox = () => {
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
+    const body = {
       email: data.get("email"),
       password: data.get("password"),
-    });
+    };
+    console.log(body);
+
+    try {
+      await axios.post(API, body);
+      alert("Account logged in successfully");
+    } catch (err) {
+      alert(err.response.data.message);
+    }
   };
 
   return (

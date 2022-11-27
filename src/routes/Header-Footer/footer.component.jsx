@@ -29,7 +29,7 @@ const Footer = () => {
               <h2>Contact us</h2>
               <ul className="list-one">
                 <li>
-                  <span>+45-71729778</span>
+                  <span>+45-71723434</span>
                 </li>
                 <li>
                   <span>info@repairsolutions.dk</span>{" "}
