@@ -38,7 +38,7 @@ const Header = () => {
                     }}
                   >
                     <PhoneIcon sx={{ fontSize: "18px" }} />
-                    <span style={{ marginLeft: "5px" }}>+45-71729778</span>
+                    <span style={{ marginLeft: "5px" }}>+45-71723434</span>
                   </div>
                 </a>
               </Grid>
