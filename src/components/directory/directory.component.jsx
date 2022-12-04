@@ -1,4 +1,5 @@
-import CategoryItem from "../category-item/category-item.component";
+import React from "react";
+import DirectoryItem from "../directory-item/directory-item.component";
 import "./directory.styles.scss";
 
 const Directory = ({ mainCategories }) => {
@@ -6,7 +7,7 @@ const Directory = ({ mainCategories }) => {
     <div className="categories-container">
       {/* before shifting the code it was {id, title, imageUrl} instead of (category) */}
       {mainCategories.map((categoryArray) => (
-        <CategoryItem key={categoryArray.id} categoryProp={categoryArray} />
+        <DirectoryItem key={categoryArray.id} categoryProp={categoryArray} />
       ))}
     </div>
   );

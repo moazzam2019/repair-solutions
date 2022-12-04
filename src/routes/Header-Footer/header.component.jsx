@@ -91,8 +91,8 @@ const Header = () => {
                   </div>
                 </Link>
               </Grid>
-              <Grid item lg={2} className="header-bottom-item"></Grid>
-              <Grid item lg={6} className="header-bottom-item">
+              <Grid item lg={3} className="header-bottom-item"></Grid>
+              <Grid item lg={5} className="header-bottom-item">
                 <NavBar />{" "}
               </Grid>
               <Grid item lg={2} className="header-bottom-item">

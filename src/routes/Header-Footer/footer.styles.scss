@@ -13,6 +13,10 @@
   background-color: #333333;
   color: white;
   padding-bottom: 2px;
+  @media (max-width: 1200px) {
+    margin-top: 600px;
+    text-align: center;
+  }
   @media (max-width: 600px) {
     margin-top: 600px;
     text-align: center;

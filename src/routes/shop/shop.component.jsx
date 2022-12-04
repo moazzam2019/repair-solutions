@@ -1,24 +1,16 @@
-import { useContext, useState } from "react";
-import { ProductsContext } from "../../context/products.context";
-import ProductCard from "../../components/product-card/product-card.component";
+import { Routes, Route } from "react-router-dom";
+
+import ProductsPreview from "../products/products-preview.component.jsx";
+import Category from "../category/category.component";
+
 import "./shop.styles.scss";
-import { Fragment } from "react";
 
 const Shop = () => {
-  document.title = "Shop";
-  const { products } = useContext(ProductsContext);
   return (
-    <Fragment>
-      {products.length > 0 ? (
-        <div className="products-container">
-          {products.map((product) => (
-            <ProductCard key={product._id} product={product} />
-          ))}
-        </div>
-      ) : (
-        <h1>No Products to show, Please connect backend server.</h1>
-      )}
-    </Fragment>
+    <Routes>
+      <Route index element={<ProductsPreview />} />
+      <Route path=":category" element={<Category />} />
+    </Routes>
   );
 };
 

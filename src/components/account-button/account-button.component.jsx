@@ -5,10 +5,10 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import EditIcon from "@mui/icons-material/Edit";
 import Divider from "@mui/material/Divider";
-import ArchiveIcon from "@mui/icons-material/Archive";
-import FileCopyIcon from "@mui/icons-material/FileCopy";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import AddIcon from "@mui/icons-material/Add";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { Link } from "react-router-dom";
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -85,23 +85,26 @@ export default function AccountButton() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
-          <EditIcon />
-          Edit
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <FileCopyIcon />
-          Duplicate
-        </MenuItem>
+        <Link to="/add-product">
+          <MenuItem onClick={handleClose} disableRipple>
+            <AddIcon />
+            Add Phone
+          </MenuItem>
+        </Link>
+        <Link to="/update-product">
+          <MenuItem onClick={handleClose} disableRipple>
+            <EditIcon />
+            Update Phone
+          </MenuItem>
+        </Link>
+
         <Divider sx={{ my: 0.5 }} />
-        <MenuItem onClick={handleClose} disableRipple>
-          <ArchiveIcon />
-          Archive
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <MoreHorizIcon />
-          More
-        </MenuItem>
+        <Link to="/delete-product">
+          <MenuItem onClick={handleClose} disableRipple>
+            <DeleteIcon />
+            Delete Phone
+          </MenuItem>
+        </Link>
       </StyledMenu>
     </div>
   );
