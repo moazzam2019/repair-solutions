@@ -5,9 +5,11 @@ import { useState } from "react";
 import axios from "axios";
 import { useContext } from "react";
 import { ProductsContext } from "../../context/products.context";
+import { UserContext } from "../../context/user.context";
 
 function DeleteProduct() {
   const { products } = useContext(ProductsContext);
+  const { config } = useContext(UserContext);
 
   const [name, setName] = useState("");
 
@@ -17,7 +19,7 @@ function DeleteProduct() {
     const API = `http://localhost:4000/api/phones/${id}`;
 
     await axios
-      .delete(API)
+      .delete(API, config)
       .then(() => {
         alert("Product deleted Successfully!");
       })

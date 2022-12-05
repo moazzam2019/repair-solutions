@@ -53,13 +53,6 @@ function UpdateProduct() {
 
     console.log(newBody);
 
-    const body = {
-      name: name,
-      category: category,
-      imageUrl: imgUrl,
-      price: price,
-    };
-    console.log(body);
     await axios.patch(API, newBody); // API
     alert("Data Updated");
   };
@@ -75,7 +68,7 @@ function UpdateProduct() {
           noValidate
           autoComplete="off"
         >
-          <Select onChange={handleOldName}>
+          <Select label="Select Phone" onChange={handleOldName}>
             {products.map(({ name }) => (
               <MenuItem value={name}>{name}</MenuItem>
             ))}
