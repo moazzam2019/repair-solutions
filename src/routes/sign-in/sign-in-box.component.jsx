@@ -14,6 +14,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import axios from "axios";
 import { useContext } from "react";
 import { UserContext } from "../../context/user.context";
+import Cookies from "js-cookie";
 
 function Copyright(props) {
   return (
@@ -54,25 +55,20 @@ const SignInBox = () => {
         console.log(res.data.token);
         let user = res.data.data.user;
         setCurrentUser(user);
-        localStorage.setItem(
-          "data",
-          JSON.stringify({
-            data: res.data.data,
-          })
-        );
-        console.log(JSON.parse(localStorage.data));
+        // localStorage.setItem(
+        //   "data",
+        //   JSON.stringify({
+        //     data: res.data,
+        //   })
+        // );
+        // console.log(JSON.parse(localStorage.data));
       });
       alert("Account logged in successfully");
+      console.log(Cookies.get("jwt"));
     } catch (err) {
       alert(err.response.data.message);
     }
   };
-  localStorage.setItem(
-    "token",
-    JSON.stringify({
-      token: token,
-    })
-  );
 
   return (
     <ThemeProvider theme={theme}>

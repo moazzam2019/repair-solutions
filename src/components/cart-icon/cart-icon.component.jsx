@@ -8,7 +8,6 @@ const CartIcon = () => {
   const toggleIsCartOpen = () => setIsCartOpen(!isCartOpen);
   const mouseEnter = () => setIsCartOpen(true);
   const mouseLeave = () => setIsCartOpen(false);
-  console.log(isCartOpen);
   return (
     <div
       className="cart-icon-container"

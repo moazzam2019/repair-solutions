@@ -74,7 +74,7 @@ export default function AccountButton() {
         endIcon={<KeyboardArrowDownIcon />}
         sx={{ marginTop: "-5px", marginLeft: "25px", fontSize: "12px" }}
       >
-        Account
+        Admin Panel
       </Button>
       <StyledMenu
         id="demo-customized-menu"

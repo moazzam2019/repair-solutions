@@ -17,7 +17,6 @@ import { UserContext } from "../../context/user.context";
 const Header = () => {
   const { isCartOpen } = useContext(CartContext);
   const { currentUser } = useContext(UserContext);
-  console.log(Object.keys(currentUser).length !== 0);
   return (
     <Fragment>
       <div className="header-container">
@@ -70,12 +69,10 @@ const Header = () => {
               </Grid>
               <Grid item lg={3} className="header-top-item"></Grid>
               <Grid item lg={2} className="header-top-item">
-                {Object.keys(currentUser).length !== 0 ? (
+                {currentUser.length !== 0 && currentUser.role === "admin" ? (
                   <AccountButton />
                 ) : (
-                  <div style={{ textAlign: "center" }}>
-                    Please Sign in first
-                  </div>
+                  <Fragment></Fragment>
                 )}
               </Grid>
               <Grid item lg={3} className="header-top-item">

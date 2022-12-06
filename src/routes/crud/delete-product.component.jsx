@@ -22,6 +22,7 @@ function DeleteProduct() {
       .delete(API, config)
       .then(() => {
         alert("Product deleted Successfully!");
+        window.location.reload();
       })
       .catch((err) => {
         console.log(err);

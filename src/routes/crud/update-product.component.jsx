@@ -55,6 +55,7 @@ function UpdateProduct() {
 
     await axios.patch(API, newBody); // API
     alert("Data Updated");
+    window.location.reload();
   };
 
   return (

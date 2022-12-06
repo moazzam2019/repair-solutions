@@ -10,6 +10,7 @@ import {
 import { Box } from "@mui/system";
 import { useState } from "react";
 import axios from "axios";
+import { WindowSharp } from "@mui/icons-material";
 const API = "http://localhost:4000/api/phones";
 
 function AddProduct() {
@@ -41,6 +42,7 @@ function AddProduct() {
     console.log(body);
     await axios.post(API, body);
     alert("Data Submitted");
+    window.location.reload();
   };
 
   return (
