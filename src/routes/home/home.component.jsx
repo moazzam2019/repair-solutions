@@ -43,7 +43,6 @@ const Home = () => {
   ];
   return (
     <div>
-      <Outlet />
       <Directory mainCategories={mainCategories} />
     </div>
 

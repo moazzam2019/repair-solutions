@@ -16,6 +16,8 @@ import { UserContext } from "../../context/user.context";
 const API = "http://localhost:4000/api/phones";
 
 function AddProduct() {
+  document.title = "Add Phone";
+
   const { config } = useContext(UserContext);
 
   const [name, setName] = useState("");
@@ -49,8 +51,11 @@ function AddProduct() {
       alert("Data Submitted");
       window.location.reload();
     } catch (err) {
-      alert(err.response.data.message);
-      console.log(err.response.data.message);
+      if (err.response.data.message === "jwt expired") {
+        alert("Session expired, Please log in again.");
+        localStorage.clear();
+        window.location.replace("/sign-in");
+      } else alert(err.response.data.message);
     }
   };
 

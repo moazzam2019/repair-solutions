@@ -28,9 +28,7 @@ export const UserProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("token", JSON.stringify(token));
   }, [token]);
-  console.log(localStorage.getItem("user"));
 
-  //   console.log(newToken);
   const bearerToken = "Bearer " + token;
   const config = { headers: { authorization: bearerToken } };
 

@@ -12,9 +12,12 @@ const ProductsPreview = () => {
     <Fragment>
       {products.length > 0 ? (
         <div className="category-container">
-          {products.map((product) => (
-            <ProductCard key={product._id} product={product} />
-          ))}
+          {products
+            .slice(0)
+            .reverse()
+            .map((product) => (
+              <ProductCard key={product._id} product={product} />
+            ))}
         </div>
       ) : (
         <h1>No Products to show, Please connect backend server.</h1>

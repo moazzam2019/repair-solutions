@@ -32,13 +32,16 @@ const Category = () => {
 
   return (
     <Fragment>
-      {products.length > 0 ? (
+      {productsNew.length > 0 ? (
         <Fragment>
           <h2 className="category-title">{category.toUpperCase()}</h2>
           <div className="category-container">
-            {productsNew.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
+            {productsNew
+              .slice(0)
+              .reverse()
+              .map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
           </div>{" "}
         </Fragment>
       ) : (

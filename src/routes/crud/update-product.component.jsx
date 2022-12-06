@@ -15,6 +15,8 @@ import { ProductsContext } from "../../context/products.context";
 import { UserContext } from "../../context/user.context";
 
 function UpdateProduct() {
+  document.title = "Update Phone";
+
   const { products } = useContext(ProductsContext);
   const { config } = useContext(UserContext);
 
@@ -55,10 +57,17 @@ function UpdateProduct() {
     if (price.length !== 0) newBody.price = price;
 
     console.log(newBody);
-
-    await axios.patch(API, newBody, config); // API
-    alert("Data Updated");
-    window.location.reload();
+    try {
+      await axios.patch(API, newBody, config); // API
+      alert("Data Updated");
+      window.location.reload();
+    } catch (err) {
+      if (err.response.data.message === "jwt expired") {
+        alert("Session expired, Please log in again.");
+        localStorage.clear();
+        window.location.replace("/sign-in");
+      } else alert(err.response.data.message);
+    }
   };
 
   return (
