@@ -10,8 +10,8 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import axios from "axios";
-// import { useContext } from "react";
-// import { UserContext } from "../../context/user.context";
+import { useContext } from "react";
+import { UserContext } from "../../context/user.context";
 
 function Copyright(props) {
   return (
@@ -36,7 +36,7 @@ const theme = createTheme();
 const API = "http://localhost:4000/api/users/signup";
 
 const SignUp = () => {
-  // const { setCurrentUser } = useContext(UserContext);
+  const { setCurrentUser, setCurrentToken } = useContext(UserContext);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -53,7 +53,8 @@ const SignUp = () => {
       await axios.post(API, body).then((res) => {
         console.log(res.data.token);
         console.log(res.data.data);
-        // setCurrentUser(res.data.data);
+        setCurrentUser(res.data.data);
+        setCurrentToken(res.data.token);
       });
       alert("Account created successfully");
     } catch (err) {

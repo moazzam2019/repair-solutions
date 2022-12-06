@@ -12,9 +12,12 @@ import { useState } from "react";
 import axios from "axios";
 import { useContext } from "react";
 import { ProductsContext } from "../../context/products.context";
+import { UserContext } from "../../context/user.context";
 
 function UpdateProduct() {
   const { products } = useContext(ProductsContext);
+  const { config } = useContext(UserContext);
+
   const [oldName, setOldName] = useState("");
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
@@ -53,7 +56,7 @@ function UpdateProduct() {
 
     console.log(newBody);
 
-    await axios.patch(API, newBody); // API
+    await axios.patch(API, newBody, config); // API
     alert("Data Updated");
     window.location.reload();
   };

@@ -10,10 +10,14 @@ import {
 import { Box } from "@mui/system";
 import { useState } from "react";
 import axios from "axios";
-import { WindowSharp } from "@mui/icons-material";
+import { useContext } from "react";
+import { UserContext } from "../../context/user.context";
+
 const API = "http://localhost:4000/api/phones";
 
 function AddProduct() {
+  const { config } = useContext(UserContext);
+
   const [name, setName] = useState("");
   const [category, setCategory] = useState("");
   const [imgUrl, setImgUrl] = useState("");
@@ -40,9 +44,14 @@ function AddProduct() {
       price: price,
     };
     console.log(body);
-    await axios.post(API, body);
-    alert("Data Submitted");
-    window.location.reload();
+    try {
+      await axios.post(API, body, config);
+      alert("Data Submitted");
+      window.location.reload();
+    } catch (err) {
+      alert(err.response.data.message);
+      console.log(err.response.data.message);
+    }
   };
 
   return (

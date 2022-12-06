@@ -1,4 +1,4 @@
-import RSlogo from "../../assets/repair-solutions-logo.png";
+import RSlogo from "../../assets/repair-solutions-logoo.png";
 import { Link } from "react-router-dom";
 import { Fragment, useContext } from "react";
 import "./header.styles.scss";
@@ -93,7 +93,7 @@ const Header = () => {
               <Grid item lg={2} className="header-bottom-item">
                 <Link className="logo-container" to="/">
                   <div>
-                    <img src={RSlogo} className="logo" />
+                    <img src={RSlogo} className="logo" alt="Repair Solutions" />
                   </div>
                 </Link>
               </Grid>
