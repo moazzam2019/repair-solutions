@@ -7,7 +7,7 @@ const NavBar = () => {
 
   const signOutHandler = () => {
     localStorage.clear();
-    window.location.reload();
+    window.location.replace("../");
   };
 
   return (
