@@ -49,7 +49,7 @@ const UpdatePassword = () => {
     <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
-        <h1 style={{ textAlign: "center" }}>Update Data</h1>
+        <h1 style={{ textAlign: "center" }}>Update Password</h1>
         <Box
           sx={{
             marginTop: 8,
