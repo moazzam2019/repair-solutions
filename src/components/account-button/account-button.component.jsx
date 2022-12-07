@@ -51,7 +51,15 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-export default function AccountButton() {
+export default function AccountButton({
+  label,
+  buttonOne,
+  buttonTwo,
+  buttonThree,
+  linkOne,
+  linkTwo,
+  linkThree,
+}) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -74,7 +82,7 @@ export default function AccountButton() {
         endIcon={<KeyboardArrowDownIcon />}
         sx={{ marginTop: "-5px", marginLeft: "25px", fontSize: "12px" }}
       >
-        Admin Panel
+        {label}{" "}
       </Button>
       <StyledMenu
         id="demo-customized-menu"
@@ -85,26 +93,29 @@ export default function AccountButton() {
         open={open}
         onClose={handleClose}
       >
-        <Link to="/add-product">
+        <Link to={linkOne}>
           <MenuItem onClick={handleClose} disableRipple>
-            <AddIcon />
-            Add Phone
+            {linkOne === "/add-product" ? <AddIcon /> : <div></div>}
+            {buttonOne}{" "}
           </MenuItem>
         </Link>
-        <Link to="/update-product">
+        <Link to={linkTwo}>
           <MenuItem onClick={handleClose} disableRipple>
-            <EditIcon />
-            Update Phone
+            {linkTwo === "/update-product" ? <EditIcon /> : <div></div>}{" "}
+            {buttonTwo}
           </MenuItem>
         </Link>
 
-        <Divider sx={{ my: 0.5 }} />
-        <Link to="/delete-product">
-          <MenuItem onClick={handleClose} disableRipple>
-            <DeleteIcon />
-            Delete Phone
-          </MenuItem>
-        </Link>
+        {linkThree ? (
+          <Link to={linkThree}>
+            <MenuItem onClick={handleClose} disableRipple>
+              <DeleteIcon />
+              {buttonThree}{" "}
+            </MenuItem>
+          </Link>
+        ) : (
+          <div></div>
+        )}
       </StyledMenu>
     </div>
   );

@@ -67,10 +67,35 @@ const Header = () => {
                   </div>
                 </a>
               </Grid>
-              <Grid item lg={3} className="header-top-item"></Grid>
+              <Grid
+                item
+                lg={3}
+                className="header-top-item"
+                sx={{ paddingLeft: "43px" }}
+              >
+                {Object.keys(currentUser).length > 0 ? (
+                  <AccountButton
+                    label={currentUser.name}
+                    buttonOne="Update Data"
+                    linkOne={"/update-data"}
+                    buttonTwo="Change Password"
+                    linkTwo={"/update-password"}
+                  />
+                ) : (
+                  <div></div>
+                )}
+              </Grid>
               <Grid item lg={2} className="header-top-item">
                 {currentUser.length !== 0 && currentUser.role === "admin" ? (
-                  <AccountButton />
+                  <AccountButton
+                    label="Admin Panel"
+                    buttonOne="Add phone"
+                    buttonTwo="Update Phone"
+                    buttonThree="Delete Phone"
+                    linkOne="/add-product"
+                    linkTwo="/update-product"
+                    linkThree="/delete-product"
+                  />
                 ) : (
                   <Fragment></Fragment>
                 )}

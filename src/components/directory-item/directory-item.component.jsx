@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 const DirectoryItem = ({ categoryProp }) => {
   const { title, imageUrl, param } = categoryProp;
+
   return (
     <Link className="directory-item-container" to={`/shop${param}`}>
       <div
         className="background-image"
-        style={{ backgroundImage: `url(${imageUrl})` }}
+        style={{
+          backgroundImage: `url(${imageUrl})`,
+        }}
       />
 
       <div className="directory-item-body">
