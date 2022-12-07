@@ -53,8 +53,9 @@ const SignUp = () => {
       await axios.post(API, body).then((res) => {
         console.log(res.data.token);
         console.log(res.data.data);
-        setCurrentUser(res.data.data);
+        setCurrentUser(res.data.data.user);
         setCurrentToken(res.data.token);
+        console.log(res.data.data);
       });
       alert("Account created successfully");
     } catch (err) {

@@ -71,7 +71,7 @@ const Header = () => {
                 item
                 lg={3}
                 className="header-top-item"
-                sx={{ paddingLeft: "43px" }}
+                sx={{ textAlign: "center" }}
               >
                 {Object.keys(currentUser).length > 0 ? (
                   <AccountButton

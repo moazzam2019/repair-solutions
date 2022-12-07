@@ -30,8 +30,6 @@ const UpdatePassword = () => {
 
     try {
       await axios.patch(API, body, config).then((res) => {
-        let user = res.data.data.user;
-        setCurrentUser(user);
         alert("Data Updated Successfully, Please log in again!");
         localStorage.clear();
         window.location.replace("/sign-in");
