@@ -11,6 +11,7 @@ import UpdateProduct from "./routes/crud/update-product.component";
 import DeleteProduct from "./routes/crud/delete-product.component";
 import UpdatePassword from "./routes/crud/update-password.component";
 import UpdateData from "./routes/crud/update-data.component";
+import SearchPage from "./routes/search-page/search-page.component";
 
 const App = () => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="delete-product" element={<DeleteProduct />} />
         <Route path="update-password" element={<UpdatePassword />} />
         <Route path="update-data" element={<UpdateData />} />
+        <Route path="search-page" element={<SearchPage />} />
       </Route>
     </Routes>
   );
