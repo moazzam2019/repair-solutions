@@ -34,7 +34,9 @@ const Category = () => {
     <Fragment>
       {productsNew.length > 0 ? (
         <Fragment>
-          <h2 className="category-title">{category.toUpperCase()}</h2>
+          <h1 style={{ textAlign: "center", margin: "50px auto" }}>
+            {category.toUpperCase()}
+          </h1>
           <div className="category-container">
             {productsNew
               .slice(0)
@@ -45,7 +47,9 @@ const Category = () => {
           </div>{" "}
         </Fragment>
       ) : (
-        <h2>No {categoryMain} Products to show, Please connect backend</h2>
+        <h2 style={{ textAlign: "center", margin: "50px auto" }}>
+          No {categoryMain} Products to show, Please connect backend
+        </h2>
       )}
     </Fragment>
   );

@@ -6,8 +6,9 @@ import "../category/category.styles.scss";
 // styles used from category component with same class name
 
 const SearchPage = () => {
-  document.title = "Search Result";
   const { products, searchProducts } = useContext(ProductsContext);
+
+  document.title = `Search Results for "${searchProducts}"`;
   const newFilteredProducts = products.filter((product) => {
     return product.name.toLocaleLowerCase().includes(searchProducts);
   });

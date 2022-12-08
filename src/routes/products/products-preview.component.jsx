@@ -20,7 +20,9 @@ const ProductsPreview = () => {
             ))}
         </div>
       ) : (
-        <h1>No Products to show, Please connect backend server.</h1>
+        <h1 style={{ textAlign: "center", margin: "50px auto" }}>
+          No Products to show, Please connect backend server.
+        </h1>
       )}
     </Fragment>
   );
