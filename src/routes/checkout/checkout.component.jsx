@@ -15,29 +15,29 @@ const Checkout = () => {
   const { cartItems, cartTotal } = useContext(CartContext);
   const { currentUser } = useContext(UserContext);
 
+  // Stripe Payment
+
   const KEY =
     "pk_test_51MBKaqHLwIldxPu3xLWilOhlaMnVZDRPnjqsBQgP9pVGFb2dQ9lH1oWJ9AKIOeMahzsctA5MGBNV3apKspQL8P2d006g1wqIlT";
 
   const [stripeToken, setStripeToken] = useState(null);
   const onToken = (token) => {
-    console.log(token);
     setStripeToken(token);
   };
-
-  const makeRequest = async () => {
-    try {
-      const res = await axios.post(
-        "http://localhost:4000/api/checkout/payment",
-        {
+  useEffect(() => {
+    const makeRequest = async () => {
+      try {
+        await axios.post("http://localhost:4000/api/checkout/payment", {
           tokenId: stripeToken.id,
-          amount: { cartTotal } * 100,
-        }
-      );
-      console.log(res.data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+          amount: cartTotal * 100,
+        });
+        alert("Payment Successful!");
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    makeRequest();
+  }, [stripeToken]);
 
   return (
     <div className="checkout-container">
@@ -59,7 +59,7 @@ const Checkout = () => {
         </div>
       </div>
       {cartItems.map((cartItem) => (
-        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+        <CheckoutItem key={cartItem._id} cartItem={cartItem} />
       ))}
       <div className="total">TOTAL: ${cartTotal}</div>
       {cartTotal > 0 && currentUser.length !== 0 ? (
@@ -73,7 +73,7 @@ const Checkout = () => {
           token={onToken}
           stripeKey={KEY}
         >
-          <Button onClick={makeRequest}>CHECKOUT NOW</Button>
+          <Button>CHECKOUT NOW</Button>
         </StripeCheckout>
       ) : (
         <h2>Please log in or Add item to Cart to Checkout</h2>
