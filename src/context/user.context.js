@@ -8,10 +8,11 @@ const getInitialtoken = () => {
   const token = localStorage.getItem("token");
   return token ? JSON.parse(token) : "";
 };
+// the actual values that we want to access
 
 export const UserContext = createContext({
   currentUser: null,
-  setCurrentUser: () => {},
+  setCurrentUser: () => null,
   token: "",
   setCurrentToken: () => "",
 });
@@ -40,3 +41,5 @@ export const UserProvider = ({ children }) => {
 
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };
+
+// children are actually the components that are wrapped between this user provider or context

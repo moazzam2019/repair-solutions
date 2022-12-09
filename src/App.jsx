@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/home/home.component";
 import HeaderFooter from "./routes/Header-Footer/header-footer.component";
@@ -14,9 +13,7 @@ import UpdateData from "./routes/crud/update-data.component";
 import SearchPage from "./routes/search-page/search-page.component";
 
 const App = () => {
-  useEffect(() => {
-    document.title = "Repair Solutions";
-  }, []);
+  document.title = "Repair Solutions";
   return (
     <Routes>
       <Route path="/" element={<HeaderFooter />}>

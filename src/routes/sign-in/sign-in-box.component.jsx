@@ -39,7 +39,7 @@ const theme = createTheme();
 const API = "http://localhost:4000/api/users/login";
 
 const SignInBox = () => {
-  const { setCurrentUser, setCurrentToken, token } = useContext(UserContext);
+  const { setCurrentUser, setCurrentToken } = useContext(UserContext);
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);

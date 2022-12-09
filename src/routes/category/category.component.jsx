@@ -10,6 +10,7 @@ import "./category.styles.scss";
 const Category = () => {
   const { category } = useParams();
   const categoryMain = category.charAt(0).toUpperCase() + category.slice(1);
+  document.title = categoryMain;
 
   const { products } = useContext(ProductsContext);
   const [productsNew, setProductsNew] = useState(products);

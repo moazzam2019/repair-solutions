@@ -1,5 +1,4 @@
 import RSlogo from "../../assets/repair-solutions-logo.png";
-import { Link } from "react-router-dom";
 import { Fragment } from "react";
 import "./footer.styles.scss";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -18,7 +17,11 @@ const Footer = () => {
         <Container maxWidth="lg">
           <Grid container spacing={3}>
             <Grid item xs={6} lg={3} md={4}>
-              <img src={RSlogo} style={{ width: "70%" }} />
+              <img
+                src={RSlogo}
+                style={{ width: "70%" }}
+                alt="Repair Solutions logo"
+              />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
                 sequi aliquid sint optio perspiciatis! Cumque eos repellat
@@ -45,19 +48,19 @@ const Footer = () => {
               <h2>Menu</h2>
               <ul>
                 <li style={{ textDecoration: "none" }}>
-                  <a href="#">Account</a>
+                  <a href="/sign-in">Account</a>
                 </li>
                 <li>
-                  <a href="#">Log in</a>
+                  <a href="/sign-in">Log in</a>
                 </li>
                 <li>
-                  <a href="#">Register</a>
+                  <a href="/sign-in">Register</a>
                 </li>
                 <li>
-                  <a href="#">Shop</a>
+                  <a href="/shop">Shop</a>
                 </li>
                 <li>
-                  <a href="#">Checkout</a>
+                  <a href="/checkout">Checkout</a>
                 </li>
               </ul>
             </Grid>

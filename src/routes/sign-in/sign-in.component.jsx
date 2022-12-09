@@ -1,7 +1,7 @@
 import SignUp from "./sign-up.component";
 import { Grid } from "@mui/material";
 import SignInBox from "./sign-in-box.component";
-import { redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../../context/user.context";
 
