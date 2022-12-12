@@ -12,7 +12,7 @@
     border-width: 3px;
   }
   @media (max-width: 600px) {
-    padding-bottom: 60px;
+    padding-bottom: 100px;
   }
 
   img {
@@ -28,8 +28,9 @@
     position: absolute;
     top: 388px;
     display: none;
-    @media (max-width: 600px) {
-      top: 220px;
+
+    @media (min-width: 600px) {
+      top: 390px;
     }
   }
 
