@@ -46,9 +46,11 @@ function DeleteProduct() {
 
   return (
     <div className="App">
+      <h1 style={{ textAlign: "center" }}>Delete Product</h1>
+
       <Box
         sx={{
-          "& > :not(style)": { m: 1, width: "80%" },
+          "& > :not(style)": { m: 1, width: "100%" },
         }}
         noValidate
         autoComplete="off"
