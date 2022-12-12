@@ -1,20 +1,12 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Button from "@mui/material/Button";
-import List from "@mui/material/List";
+
 import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import NavbarButton from "../navbar/navbar-button/navbar-button.component";
 import { useContext } from "react";
 import { UserContext } from "../../context/user.context";
-import AccountButton from "../account-button/account-button.component";
 import { Fragment } from "react";
 import "./header-drawer.styles.scss";
 
