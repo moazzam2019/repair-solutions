@@ -28,7 +28,7 @@ const Checkout = () => {
     const makeRequest = async () => {
       try {
         await axios.post(
-          "https://light-crow-kerchief.cyclic.app/checkout/payment",
+          "https://light-crow-kerchief.cyclic.app/api/checkout/payment",
           {
             tokenId: stripeToken.id,
             amount: cartTotal * 100,
