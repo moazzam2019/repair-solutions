@@ -33,7 +33,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-const API = "http://localhost:4000/api/users/signup";
+const API = "https://light-crow-kerchief.cyclic.app/api/users/signup";
 
 const SignUp = () => {
   const { setCurrentUser, setCurrentToken } = useContext(UserContext);

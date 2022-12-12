@@ -11,7 +11,7 @@ import { UserContext } from "../../context/user.context";
 
 const theme = createTheme();
 
-const API = "http://localhost:4000/api/users/updateMyPassword";
+const API = "https://light-crow-kerchief.cyclic.app/api/users/updateMyPassword";
 
 const UpdatePassword = () => {
   const { config } = useContext(UserContext);

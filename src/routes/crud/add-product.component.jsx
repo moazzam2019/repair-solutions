@@ -13,7 +13,7 @@ import axios from "axios";
 import { useContext } from "react";
 import { UserContext } from "../../context/user.context";
 
-const API = "http://localhost:4000/api/phones";
+const API = "https://light-crow-kerchief.cyclic.app/api/phones";
 
 function AddProduct() {
   document.title = "Add Phone";

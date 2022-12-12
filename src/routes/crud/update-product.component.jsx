@@ -45,7 +45,7 @@ function UpdateProduct() {
   const updateData = async () => {
     var index = products.findIndex((item) => item.name === oldName);
     const id = products[index]._id;
-    const API = `http://localhost:4000/api/phones/${id}`;
+    const API = `https://light-crow-kerchief.cyclic.app/api/phones/${id}`;
 
     const newBody = {};
 
@@ -81,11 +81,16 @@ function UpdateProduct() {
           noValidate
           autoComplete="off"
         >
-          <Select label="Select Phone" onChange={handleOldName}>
-            {products.map(({ name }) => (
-              <MenuItem value={name}>{name}</MenuItem>
-            ))}
-          </Select>
+          <FormControl>
+            <InputLabel id="demo-simple-select-label">
+              Select Phone to Update
+            </InputLabel>
+            <Select label="Select Phone" onChange={handleOldName}>
+              {products.map(({ name }) => (
+                <MenuItem value={name}>{name}</MenuItem>
+              ))}
+            </Select>
+          </FormControl>
 
           <TextField
             autoComplete="off"

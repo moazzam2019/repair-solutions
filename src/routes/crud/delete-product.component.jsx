@@ -1,5 +1,11 @@
 import React from "react";
-import { Button, MenuItem, Select } from "@mui/material";
+import {
+  Button,
+  MenuItem,
+  Select,
+  FormControl,
+  InputLabel,
+} from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
 import axios from "axios";
@@ -18,7 +24,7 @@ function DeleteProduct() {
   const deleteData = async () => {
     var index = products.findIndex((item) => item.name === name);
     const id = products[index]._id;
-    const API = `http://localhost:4000/api/phones/${id}`;
+    const API = `https://light-crow-kerchief.cyclic.app/api/phones/${id}`;
 
     await axios
       .delete(API, config)
@@ -47,11 +53,16 @@ function DeleteProduct() {
         noValidate
         autoComplete="off"
       >
-        <Select onChange={handleNameChange}>
-          {products.map(({ name }) => (
-            <MenuItem value={name}>{name}</MenuItem>
-          ))}
-        </Select>
+        <FormControl variant="outlined">
+          <InputLabel id="demo-simple-select-label">
+            Select Phone to Delete
+          </InputLabel>
+          <Select onChange={handleNameChange}>
+            {products.map(({ name }) => (
+              <MenuItem value={name}>{name}</MenuItem>
+            ))}
+          </Select>
+        </FormControl>
 
         <Button variant="contained" onClick={deleteData}>
           Submit

@@ -27,11 +27,15 @@ const Checkout = () => {
   useEffect(() => {
     const makeRequest = async () => {
       try {
-        await axios.post("http://localhost:4000/api/checkout/payment", {
-          tokenId: stripeToken.id,
-          amount: cartTotal * 100,
-        });
+        await axios.post(
+          "https://light-crow-kerchief.cyclic.app/checkout/payment",
+          {
+            tokenId: stripeToken.id,
+            amount: cartTotal * 100,
+          }
+        );
         alert("Payment Successful!");
+        window.location.replace("../");
       } catch (err) {
         console.log(err);
       }
