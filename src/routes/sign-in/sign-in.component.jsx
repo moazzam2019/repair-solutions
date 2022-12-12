@@ -17,10 +17,10 @@ const SignIn = () => {
     <div>
       <Grid container>
         <Grid item xs={12} md={6}>
-          <SignUp />
+          <SignInBox />
         </Grid>
         <Grid item xs={12} md={6}>
-          <SignInBox />
+          <SignUp />
         </Grid>
       </Grid>
     </div>
