@@ -28,7 +28,7 @@ const Header = () => {
         <div className="top-header">
           <Container maxWidth="lg" className="header-top-main">
             <Grid container className="grid-container">
-              <Grid item lg={2} className="header-top-item">
+              <Grid item lg={2} md={2} className="header-top-item">
                 <a href="tel:+4571723434">
                   <div
                     style={{
@@ -45,7 +45,7 @@ const Header = () => {
                 </a>
               </Grid>
 
-              <Grid item lg={2} className="header-top-item">
+              <Grid item lg={2} md={2} className="header-top-item">
                 <a href="mailto:info@repairsolutions.dk">
                   <div
                     style={{
@@ -70,6 +70,7 @@ const Header = () => {
               <Grid
                 item
                 lg={3}
+                md={1}
                 className="header-top-item"
                 sx={{ textAlign: "center" }}
               >
@@ -85,7 +86,7 @@ const Header = () => {
                   <div></div>
                 )}
               </Grid>
-              <Grid item lg={2} className="header-top-item">
+              <Grid item lg={2} md={1} className="header-top-item">
                 {currentUser.length !== 0 && currentUser.role === "admin" ? (
                   <AccountButton
                     label="Admin Panel"
@@ -122,11 +123,11 @@ const Header = () => {
                   </div>
                 </Link>
               </Grid>
-              <Grid item lg={3} className="header-bottom-item"></Grid>
-              <Grid item lg={5} className="header-bottom-item">
+              <Grid item lg={3} md={2} className="header-bottom-item"></Grid>
+              <Grid item lg={5} md={5} className="header-bottom-item">
                 <NavBar />{" "}
               </Grid>
-              <Grid item lg={2} className="header-bottom-item">
+              <Grid item lg={2} md={2} className="header-bottom-item">
                 <CartIcon />
                 {isCartOpen && <CartDropdown />}
               </Grid>

@@ -51,11 +51,11 @@ function AddProduct() {
       alert("Data Submitted");
       window.location.reload();
     } catch (err) {
-      if (err.response.data.message === "jwt expired") {
+      if (err.response.data.message.message === "jwt expired") {
         alert("Session expired, Please log in again.");
         localStorage.clear();
         window.location.replace("/sign-in");
-      } else alert(err.response.data.message);
+      } else alert(err.response.data.message.message);
     }
   };
 

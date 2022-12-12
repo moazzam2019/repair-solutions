@@ -28,7 +28,7 @@ function DeleteProduct() {
 
     await axios
       .delete(API, config)
-      .then(() => {
+      .then((res) => {
         alert("Product deleted Successfully!");
         window.location.reload();
       })

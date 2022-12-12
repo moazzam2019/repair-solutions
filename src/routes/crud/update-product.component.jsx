@@ -66,7 +66,8 @@ function UpdateProduct() {
         alert("Session expired, Please log in again.");
         localStorage.clear();
         window.location.replace("/sign-in");
-      } else alert(err.response.data.message);
+      } else alert(err.response.data.message.message);
+      console.log(err);
     }
   };
 

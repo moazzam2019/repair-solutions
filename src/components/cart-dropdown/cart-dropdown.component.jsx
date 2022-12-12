@@ -26,7 +26,7 @@ const CartDropdown = () => {
             <CartItem key={item._id} cartItem={item} />
           ))}
         </div>
-        <Button onClick={goToCheckoutHandler}>Go to Checkout</Button>
+        <Button onClick={goToCheckoutHandler}>Checkout</Button>
       </div>
     </div>
   );
