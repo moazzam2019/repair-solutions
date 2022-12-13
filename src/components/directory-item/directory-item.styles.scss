@@ -53,6 +53,9 @@
     background-color: white;
     opacity: 0.8;
     position: absolute;
+    @media (max-width: 900px) {
+      display: flex;
+    }
 
     h2 {
       font-weight: bold;
