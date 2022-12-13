@@ -45,7 +45,7 @@ const Header = () => {
                 </a>
               </Grid>
 
-              <Grid item lg={2} md={2} className="header-top-item">
+              <Grid item lg={2} md={3} className="header-top-item">
                 <a href="mailto:info@repairsolutions.dk">
                   <div
                     style={{
@@ -70,7 +70,7 @@ const Header = () => {
               <Grid
                 item
                 lg={3}
-                md={1}
+                md={2}
                 className="header-top-item"
                 sx={{ textAlign: "center" }}
               >
@@ -86,7 +86,7 @@ const Header = () => {
                   <div></div>
                 )}
               </Grid>
-              <Grid item lg={2} md={1} className="header-top-item">
+              <Grid item lg={2} md={2} className="header-top-item">
                 {currentUser.length !== 0 && currentUser.role === "admin" ? (
                   <AccountButton
                     label="Admin Panel"
@@ -101,7 +101,7 @@ const Header = () => {
                   <Fragment></Fragment>
                 )}
               </Grid>
-              <Grid item lg={3} className="header-top-item">
+              <Grid item lg={3} md={3} className="header-top-item">
                 <SearchBox />
               </Grid>
             </Grid>

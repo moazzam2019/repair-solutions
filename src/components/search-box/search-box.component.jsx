@@ -14,10 +14,10 @@ const Search = styled("div")(({ theme }) => ({
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
-  marginRight: theme.spacing(2),
+  marginRight: theme.spacing(1),
   marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("md")]: {
+  width: "80%",
+  [theme.breakpoints.up("lg")]: {
     marginLeft: theme.spacing(3),
     width: "auto",
   },
@@ -40,7 +40,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
-    width: "100%",
+    width: "90%",
     [theme.breakpoints.up("md")]: {
       width: "20ch",
     },
